@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Время прибытия</title>
+</head>
+<body>
+  <h1>Расчёт нового времени прибытия</h1>
+  
+  <form id="arrivalForm">
+    <label>
+      Час прибытия по расписанию (0–23):
+      <input type="number" id="scheduledHour" min="0" max="23" required>
+    </label>
+    <br><br>
+    <label>
+      Количество часов опоздания:
+      <input type="number" id="delayHours" min="0" required>
+    </label>
+    <br><br>
+    <button type="submit">Рассчитать</button>
+  </form>
+
+  <h2>Новое время прибытия: <output id="result">—</output></h2>
+
+  <!-- Подключаем скомпилированный JS из dist -->
+  <script type="module" src="./dist/arrival.js"></script>
+</body>
+</html>
