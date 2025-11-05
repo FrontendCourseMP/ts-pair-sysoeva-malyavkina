@@ -1,14 +1,11 @@
-// Получаем элементы формы и вывода
 const form = document.getElementById('arrivalForm') as HTMLFormElement;
 const scheduledInput = document.getElementById('scheduledHour') as HTMLInputElement;
 const delayInput = document.getElementById('delayHours') as HTMLInputElement;
 const resultOutput = document.getElementById('result') as HTMLOutputElement;
 
-// Функция расчета нового времени
 function calculateArrival(scheduledHour: number, delayHours: number): number {
     return (scheduledHour + delayHours) % 24;
 }
-
 // Обработчик формы
 form.addEventListener('submit', (event) => {
     event.preventDefault(); // предотвращаем перезагрузку страницы
