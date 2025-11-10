@@ -1,10 +1,9 @@
 "use strict";
-// Получаем элементы формы и вывода
 const form = document.getElementById('arrivalForm');
 const scheduledInput = document.getElementById('scheduledHour');
 const delayInput = document.getElementById('delayHours');
 const resultOutput = document.getElementById('result');
-// Функция расчета нового времени
+
 function calculateArrival(scheduledHour, delayHours) {
     return (scheduledHour + delayHours) % 24;
 }
