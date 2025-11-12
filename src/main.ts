@@ -1,3 +1,3 @@
-import { setupForm } from '../src/form-handler';
+import { setupForm } from './form-handler.js';
 
 setupForm();

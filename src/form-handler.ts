@@ -1,4 +1,4 @@
-import { BracketValidator } from '../dist/validator';
+import { BracketValidator } from './validator.js';
 
 export function setupForm() {
   const form = document.getElementById('bracketForm') as HTMLFormElement;
@@ -9,6 +9,6 @@ export function setupForm() {
     e.preventDefault();
     const validator = new BracketValidator();
     const isValid = validator.isValid(input.value);
-    result.textContent = isValid ? 'Строка валидна ✅' : 'Строка невалидна ❌';
+    result.textContent = isValid ? 'Строка валидна' : 'Строка невалидна';
   });
 }
