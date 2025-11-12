@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Проверка скобок</title>
 </head>
 <body>
-  <div>
-  <label> 
-    <span>Поле ввода</span>
-    <input type="text">
-  </label>
+  <h1>Задача: Скобки</h1>
+  <form id="bracketForm">
+    <input type="text" id="bracketInput" required />
+    <button type="submit">Проверить</button>
+  </form>
+  <p id="result"></p>
+
+  <!-- Внешний модуль -->
+  <script type="module" src="./dist/main.js"></script>
 </body>
-<script src="./dist/lab2.js"></script>
 </html>
